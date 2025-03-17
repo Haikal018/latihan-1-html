@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <title>Belajar javascript</title>
+    <head>
+        <script>
+            function pesan(){
+                alert ("Memanggil javascript lewat body onload")}
+        </script>
+    </head>
+    <body onload="pesan()">
+        <h1>Belajar Javascript</h1>
+        <button type="button"
+        onclick="document.getElementById('tanggal').innerHTML=Date">
+    </button>
+    <font color="red"><p id="tanggal"></p></font>
+    <hr>
+    <script>
+        window.alert("Ini merupakan pesan untuk Anda");
+    </script>
+    <script>
+        document.write("Selamat Mencoba Javascript<BR>");
+            document.write("Semoga Sukses!");
+    </script>
+    <hr>
+    <script>
+        var nama = prompt("Siapa Nama ANda?","Masukkan Nama Anda");
+        document.write("<font color='blue'>hai, " + nama +"</font>");
+    </script>
+    <hr>
+    <h4>Car Name :</h4><p id="demo"></p>
+    <h4>Build in :</h4><p id="demo1"></p>
+    <h4>Types of car :</h4><p id="demo2"></p>
+    <h4>Person :</h4> <b><font color="#cb05f7"><p id="demo3"></p></font></b>
+    <script>
+        var carName = "Volvo XC60";
+        var build = 2014;
+        var types = ["Sport" , "City Car" , "Coupe"];
+        var Person = {
+            firstname : "John", LastName : "Doe", age : 50
+        };
+        document.getElementById("demo").innerHTML = carName;
+        document.getElementById("demo1").innerHTML = build;
+        document.getElementById("demo2").innerHTML = types;
+        document.getElementById("demo3").innerHTML = "He is " + person.firstName + " "
+        + person.LastName + ". He is " + person.age + " years old";
+    </script>
+    </body>
+</html>

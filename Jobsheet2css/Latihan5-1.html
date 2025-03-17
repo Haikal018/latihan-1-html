@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device=-width, initial-scale=1.0" />
+    <title>Grid CSS</title>
+    <style>
+        .container {
+            margin-top: 20vh;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            background-color: yellow;
+            padding: 12px;
+        }
+
+        .container > div {
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            padding: 3em;
+            border: 3px solid red;
+        }
+
+        .top-left {
+            grid-column: 1/2;
+        }
+
+        .top-right {
+            grid-column: 2/3;
+        }
+
+        .content {
+            grid-column: 3/4;           
+        }
+
+        .bottom-left {
+            grid-column: 1/2;
+        }
+
+        .bottom-center {
+            grid-column: 2/3;
+        }
+
+        .bottom-right {
+            grid-column: 3/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-left">Haikal</div>
+        <div class="top-right">Top Right</div>
+        <div class="content">Kahfi</div>
+        <div class="bottom-left">Bottom Left</div>
+        <div class="bottom-center">Arrizky</div>
+        <div class="bottom-right">Bottom Right</div>
+    </div>
+</body>
+</html>
